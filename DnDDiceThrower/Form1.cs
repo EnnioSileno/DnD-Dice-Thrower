@@ -13,5 +13,37 @@ namespace DnDDiceThrower {
         public Form1() {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e) {
+
+        }
+        
+        private void buttonD4_Click(object sender, EventArgs e) {
+
+        }
+
+        private void buttonD6_Click(object sender, EventArgs e) {
+
+        }
+
+        private void buttonD8_Click(object sender, EventArgs e) {
+
+        }
+
+        private void buttonD10_Click(object sender, EventArgs e) {
+
+        }
+
+        private void buttonD12_Click(object sender, EventArgs e) {
+
+        }
+
+        private void buttonD20_Click(object sender, EventArgs e) {
+
+        }
+
+        private void textBoxD4_TextChanged(object sender, EventArgs e) {
+
+        }
     }
 }
