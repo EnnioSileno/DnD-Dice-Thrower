@@ -61,7 +61,6 @@ namespace DnDDiceThrower {
             this.textBoxD4.TabIndex = 6;
             this.textBoxD4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxD4.UseWaitCursor = true;
-            this.textBoxD4.TextChanged += new System.EventHandler(this.textBoxD4_TextChanged);
             // 
             // textBoxD6
             // 
@@ -72,7 +71,6 @@ namespace DnDDiceThrower {
             this.textBoxD6.TabIndex = 7;
             this.textBoxD6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxD6.UseWaitCursor = true;
-            this.textBoxD6.TextChanged += new System.EventHandler(this.textBoxD6_TextChanged);
             // 
             // textBoxD8
             // 
@@ -83,7 +81,6 @@ namespace DnDDiceThrower {
             this.textBoxD8.TabIndex = 8;
             this.textBoxD8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxD8.UseWaitCursor = true;
-            this.textBoxD8.TextChanged += new System.EventHandler(this.textBoxD8_TextChanged);
             // 
             // textBoxD10
             // 
@@ -94,7 +91,6 @@ namespace DnDDiceThrower {
             this.textBoxD10.TabIndex = 9;
             this.textBoxD10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxD10.UseWaitCursor = true;
-            this.textBoxD10.TextChanged += new System.EventHandler(this.textBoxD10_TextChanged);
             // 
             // textBoxD12
             // 
@@ -105,7 +101,6 @@ namespace DnDDiceThrower {
             this.textBoxD12.TabIndex = 10;
             this.textBoxD12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxD12.UseWaitCursor = true;
-            this.textBoxD12.TextChanged += new System.EventHandler(this.textBoxD12_TextChanged);
             // 
             // textBoxD20
             // 
@@ -116,7 +111,6 @@ namespace DnDDiceThrower {
             this.textBoxD20.TabIndex = 11;
             this.textBoxD20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxD20.UseWaitCursor = true;
-            this.textBoxD20.TextChanged += new System.EventHandler(this.textBoxD20_TextChanged);
             // 
             // labelD4
             // 
@@ -189,7 +183,6 @@ namespace DnDDiceThrower {
             this.buttonD20.TabIndex = 23;
             this.buttonD20.UseVisualStyleBackColor = true;
             this.buttonD20.UseWaitCursor = true;
-            this.buttonD20.Click += new System.EventHandler(this.buttonD20_Click);
             // 
             // buttonD12
             // 
@@ -202,7 +195,6 @@ namespace DnDDiceThrower {
             this.buttonD12.TabIndex = 22;
             this.buttonD12.UseVisualStyleBackColor = true;
             this.buttonD12.UseWaitCursor = true;
-            this.buttonD12.Click += new System.EventHandler(this.buttonD12_Click);
             // 
             // buttonD10
             // 
@@ -215,7 +207,6 @@ namespace DnDDiceThrower {
             this.buttonD10.TabIndex = 21;
             this.buttonD10.UseVisualStyleBackColor = true;
             this.buttonD10.UseWaitCursor = true;
-            this.buttonD10.Click += new System.EventHandler(this.buttonD10_Click);
             // 
             // buttonD8
             // 
@@ -228,7 +219,6 @@ namespace DnDDiceThrower {
             this.buttonD8.TabIndex = 20;
             this.buttonD8.UseVisualStyleBackColor = true;
             this.buttonD8.UseWaitCursor = true;
-            this.buttonD8.Click += new System.EventHandler(this.buttonD8_Click);
             // 
             // buttonD6
             // 
@@ -241,7 +231,6 @@ namespace DnDDiceThrower {
             this.buttonD6.TabIndex = 19;
             this.buttonD6.UseVisualStyleBackColor = true;
             this.buttonD6.UseWaitCursor = true;
-            this.buttonD6.Click += new System.EventHandler(this.buttonD6_Click);
             // 
             // buttonD4
             // 
@@ -254,7 +243,6 @@ namespace DnDDiceThrower {
             this.buttonD4.TabIndex = 18;
             this.buttonD4.UseVisualStyleBackColor = true;
             this.buttonD4.UseWaitCursor = true;
-            this.buttonD4.Click += new System.EventHandler(this.buttonD4_Click);
             // 
             // resultD4
             // 
@@ -363,7 +351,6 @@ namespace DnDDiceThrower {
             this.Name = "Form1";
             this.Text = "DnD Dice Thrower";
             this.UseWaitCursor = true;
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
