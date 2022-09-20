@@ -43,11 +43,19 @@ namespace DnDDiceThrower {
             this.buttonD8 = new System.Windows.Forms.Button();
             this.buttonD6 = new System.Windows.Forms.Button();
             this.buttonD4 = new System.Windows.Forms.Button();
+            this.resultD4 = new System.Windows.Forms.Label();
+            this.resultD6 = new System.Windows.Forms.Label();
+            this.resultD8 = new System.Windows.Forms.Label();
+            this.resultD10 = new System.Windows.Forms.Label();
+            this.resultD12 = new System.Windows.Forms.Label();
+            this.resultD20 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxD4
             // 
             this.textBoxD4.Location = new System.Drawing.Point(118, 21);
+            this.textBoxD4.MaxLength = 5;
             this.textBoxD4.Name = "textBoxD4";
             this.textBoxD4.Size = new System.Drawing.Size(65, 26);
             this.textBoxD4.TabIndex = 6;
@@ -58,47 +66,57 @@ namespace DnDDiceThrower {
             // textBoxD6
             // 
             this.textBoxD6.Location = new System.Drawing.Point(118, 77);
+            this.textBoxD6.MaxLength = 5;
             this.textBoxD6.Name = "textBoxD6";
             this.textBoxD6.Size = new System.Drawing.Size(65, 26);
             this.textBoxD6.TabIndex = 7;
             this.textBoxD6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxD6.UseWaitCursor = true;
+            this.textBoxD6.TextChanged += new System.EventHandler(this.textBoxD6_TextChanged);
             // 
             // textBoxD8
             // 
             this.textBoxD8.Location = new System.Drawing.Point(118, 133);
+            this.textBoxD8.MaxLength = 5;
             this.textBoxD8.Name = "textBoxD8";
             this.textBoxD8.Size = new System.Drawing.Size(65, 26);
             this.textBoxD8.TabIndex = 8;
             this.textBoxD8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxD8.UseWaitCursor = true;
+            this.textBoxD8.TextChanged += new System.EventHandler(this.textBoxD8_TextChanged);
             // 
             // textBoxD10
             // 
             this.textBoxD10.Location = new System.Drawing.Point(118, 189);
+            this.textBoxD10.MaxLength = 5;
             this.textBoxD10.Name = "textBoxD10";
             this.textBoxD10.Size = new System.Drawing.Size(65, 26);
             this.textBoxD10.TabIndex = 9;
             this.textBoxD10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxD10.UseWaitCursor = true;
+            this.textBoxD10.TextChanged += new System.EventHandler(this.textBoxD10_TextChanged);
             // 
             // textBoxD12
             // 
             this.textBoxD12.Location = new System.Drawing.Point(118, 245);
+            this.textBoxD12.MaxLength = 5;
             this.textBoxD12.Name = "textBoxD12";
             this.textBoxD12.Size = new System.Drawing.Size(65, 26);
             this.textBoxD12.TabIndex = 10;
             this.textBoxD12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxD12.UseWaitCursor = true;
+            this.textBoxD12.TextChanged += new System.EventHandler(this.textBoxD12_TextChanged);
             // 
             // textBoxD20
             // 
             this.textBoxD20.Location = new System.Drawing.Point(118, 301);
+            this.textBoxD20.MaxLength = 5;
             this.textBoxD20.Name = "textBoxD20";
             this.textBoxD20.Size = new System.Drawing.Size(65, 26);
             this.textBoxD20.TabIndex = 11;
             this.textBoxD20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxD20.UseWaitCursor = true;
+            this.textBoxD20.TextChanged += new System.EventHandler(this.textBoxD20_TextChanged);
             // 
             // labelD4
             // 
@@ -164,6 +182,7 @@ namespace DnDDiceThrower {
             // 
             this.buttonD20.BackgroundImage = global::DnDDiceThrower.Properties.Resources.d20;
             this.buttonD20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonD20.Enabled = false;
             this.buttonD20.Location = new System.Drawing.Point(12, 292);
             this.buttonD20.Name = "buttonD20";
             this.buttonD20.Size = new System.Drawing.Size(100, 50);
@@ -176,6 +195,7 @@ namespace DnDDiceThrower {
             // 
             this.buttonD12.BackgroundImage = global::DnDDiceThrower.Properties.Resources.d12;
             this.buttonD12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonD12.Enabled = false;
             this.buttonD12.Location = new System.Drawing.Point(12, 236);
             this.buttonD12.Name = "buttonD12";
             this.buttonD12.Size = new System.Drawing.Size(100, 50);
@@ -188,6 +208,7 @@ namespace DnDDiceThrower {
             // 
             this.buttonD10.BackgroundImage = global::DnDDiceThrower.Properties.Resources.d10;
             this.buttonD10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonD10.Enabled = false;
             this.buttonD10.Location = new System.Drawing.Point(12, 180);
             this.buttonD10.Name = "buttonD10";
             this.buttonD10.Size = new System.Drawing.Size(100, 50);
@@ -200,6 +221,7 @@ namespace DnDDiceThrower {
             // 
             this.buttonD8.BackgroundImage = global::DnDDiceThrower.Properties.Resources.d8;
             this.buttonD8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonD8.Enabled = false;
             this.buttonD8.Location = new System.Drawing.Point(12, 124);
             this.buttonD8.Name = "buttonD8";
             this.buttonD8.Size = new System.Drawing.Size(100, 50);
@@ -212,6 +234,7 @@ namespace DnDDiceThrower {
             // 
             this.buttonD6.BackgroundImage = global::DnDDiceThrower.Properties.Resources.d6;
             this.buttonD6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonD6.Enabled = false;
             this.buttonD6.Location = new System.Drawing.Point(12, 68);
             this.buttonD6.Name = "buttonD6";
             this.buttonD6.Size = new System.Drawing.Size(100, 50);
@@ -224,6 +247,7 @@ namespace DnDDiceThrower {
             // 
             this.buttonD4.BackgroundImage = global::DnDDiceThrower.Properties.Resources.d4;
             this.buttonD4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonD4.Enabled = false;
             this.buttonD4.Location = new System.Drawing.Point(12, 12);
             this.buttonD4.Name = "buttonD4";
             this.buttonD4.Size = new System.Drawing.Size(100, 50);
@@ -232,11 +256,90 @@ namespace DnDDiceThrower {
             this.buttonD4.UseWaitCursor = true;
             this.buttonD4.Click += new System.EventHandler(this.buttonD4_Click);
             // 
+            // resultD4
+            // 
+            this.resultD4.AutoSize = true;
+            this.resultD4.Location = new System.Drawing.Point(257, 27);
+            this.resultD4.Name = "resultD4";
+            this.resultD4.Size = new System.Drawing.Size(18, 20);
+            this.resultD4.TabIndex = 24;
+            this.resultD4.Text = "_";
+            this.resultD4.UseWaitCursor = true;
+            // 
+            // resultD6
+            // 
+            this.resultD6.AutoSize = true;
+            this.resultD6.Location = new System.Drawing.Point(257, 83);
+            this.resultD6.Name = "resultD6";
+            this.resultD6.Size = new System.Drawing.Size(18, 20);
+            this.resultD6.TabIndex = 25;
+            this.resultD6.Text = "_";
+            this.resultD6.UseWaitCursor = true;
+            // 
+            // resultD8
+            // 
+            this.resultD8.AutoSize = true;
+            this.resultD8.Location = new System.Drawing.Point(257, 139);
+            this.resultD8.Name = "resultD8";
+            this.resultD8.Size = new System.Drawing.Size(18, 20);
+            this.resultD8.TabIndex = 26;
+            this.resultD8.Text = "_";
+            this.resultD8.UseWaitCursor = true;
+            // 
+            // resultD10
+            // 
+            this.resultD10.AutoSize = true;
+            this.resultD10.Location = new System.Drawing.Point(258, 195);
+            this.resultD10.Name = "resultD10";
+            this.resultD10.Size = new System.Drawing.Size(18, 20);
+            this.resultD10.TabIndex = 27;
+            this.resultD10.Text = "_";
+            this.resultD10.UseWaitCursor = true;
+            // 
+            // resultD12
+            // 
+            this.resultD12.AutoSize = true;
+            this.resultD12.Location = new System.Drawing.Point(258, 251);
+            this.resultD12.Name = "resultD12";
+            this.resultD12.Size = new System.Drawing.Size(18, 20);
+            this.resultD12.TabIndex = 28;
+            this.resultD12.Text = "_";
+            this.resultD12.UseWaitCursor = true;
+            // 
+            // resultD20
+            // 
+            this.resultD20.AutoSize = true;
+            this.resultD20.Location = new System.Drawing.Point(258, 307);
+            this.resultD20.Name = "resultD20";
+            this.resultD20.Size = new System.Drawing.Size(18, 20);
+            this.resultD20.TabIndex = 29;
+            this.resultD20.Text = "_";
+            this.resultD20.UseWaitCursor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Location = new System.Drawing.Point(688, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 50);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "Reset";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseWaitCursor = true;
+            this.button1.Click += new System.EventHandler(this.reset_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 356);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.resultD20);
+            this.Controls.Add(this.resultD12);
+            this.Controls.Add(this.resultD10);
+            this.Controls.Add(this.resultD8);
+            this.Controls.Add(this.resultD6);
+            this.Controls.Add(this.resultD4);
             this.Controls.Add(this.buttonD20);
             this.Controls.Add(this.buttonD12);
             this.Controls.Add(this.buttonD10);
@@ -285,6 +388,13 @@ namespace DnDDiceThrower {
         private System.Windows.Forms.Button buttonD10;
         private System.Windows.Forms.Button buttonD12;
         private System.Windows.Forms.Button buttonD20;
+        private System.Windows.Forms.Label resultD4;
+        private System.Windows.Forms.Label resultD6;
+        private System.Windows.Forms.Label resultD8;
+        private System.Windows.Forms.Label resultD10;
+        private System.Windows.Forms.Label resultD12;
+        private System.Windows.Forms.Label resultD20;
+        private System.Windows.Forms.Button button1;
     }
 }
 
